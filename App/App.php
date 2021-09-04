@@ -48,6 +48,6 @@ class App
             $newStr .= $newLetter;
         }
 
-        return  $newStr;
+        return  trim($newStr);
     }
 }
