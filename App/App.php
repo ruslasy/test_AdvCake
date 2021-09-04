@@ -1,9 +1,18 @@
 <?php
 
-    $result = revertCharacters("Привет! Давно не виделись.");
-    echo $result; // Тевирп! Онвад ен ьсиледив.
-    
-    function revertCharacters(string $str): string
+namespace App;
+
+class App
+{
+    const TEXT = 'Привет! Давно не виделись.';
+
+    public function foo(): void
+    {
+        $str = $this->revertCharacters(self::TEXT);
+        echo $str . "\n";
+    }
+
+    private function revertCharacters(string $str): string
     {
         $newStr = '';
 
@@ -41,3 +50,4 @@
 
         return  $newStr;
     }
+}

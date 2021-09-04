@@ -1,0 +1,7 @@
+{
+    "name": "user/test_adv-cake",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
